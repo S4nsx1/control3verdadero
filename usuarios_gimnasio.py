@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 df = pd.read_csv("users_data.csv")
 
 st.write(""" 
-#Gimnasio Akira
+# Gimnasio Akira
 ## Graficas de los usuarios que asisten al gimnasio""")
 if st.button("Generos(grafico)"):
   df_hombres = df[df["gender"] == "Male"]
