@@ -25,23 +25,23 @@ if st.button("Generos(grafico)"):
 if st.button("Localidad(grafico)"):
   df_denver = df[df["user_location"] == "Denver"]
   cantidad_denver = len(df_denver)
-   df_Orlando = df[df["user_location"] == "Orlando"]
+  df_Orlando = df[df["user_location"] == "Orlando"]
   cantidad_Orlando = len(df_Orlando)
- df_Austin = df[df["user_location"] == "Austin"]
+  df_Austin = df[df["user_location"] == "Austin"]
   cantidad_Austin = len(df_Austin)
- df_Seattle = df[df["user_location"] == "Seattle"]
+  df_Seattle = df[df["user_location"] == "Seattle"]
   cantidad_Seattle = len(df_Seattle)
- df_Atlanta = df[df["user_location"] == "Atlanta"]
+  df_Atlanta = df[df["user_location"] == "Atlanta"]
   cantidad_Atlanta = len(df_Atlanta)
- df_Detroit = df[df["user_location"] == "Detroit"]
+  df_Detroit = df[df["user_location"] == "Detroit"]
   cantidad_Detroit = len(df_Detroit)
- df_Miami = df[df["user_location"] == "Miami"]
+  df_Miami = df[df["user_location"] == "Miami"]
   cantidad_Miami = len(df_Miami)
- df_San_Francisco = df[df["user_location"] == "San Francisco"]
+  df_San_Francisco = df[df["user_location"] == "San Francisco"]
   cantidad_San_Francisco = len(df_San_Francisco)
- df_Boston = df[df["user_location"] == "Boston"]
+  df_Boston = df[df["user_location"] == "Boston"]
   cantidad_Boston = len(df_Boston)
- df_Las_Vegas = df[df["user_location"] == "Las Vegas"]
+  df_Las_Vegas = df[df["user_location"] == "Las Vegas"]
   cantidad_Las_Vegas = len(df_Las_Vegas)
 
   fig,ax = plt.subplots()
