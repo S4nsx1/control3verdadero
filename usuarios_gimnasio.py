@@ -25,7 +25,7 @@ if st.button("Generos(grafico)"):
 if st.button("Localidad(grafico)"):
   df_denver = df[df["user_location"] == "Denver"]
   cantidad_denver = len(df_denver)
-   df_denver = df[df["user_location"] == "Orlando"]
+   df_Orlando = df[df["user_location"] == "Orlando"]
   cantidad_Orlando = len(df_Orlando)
  df_Austin = df[df["user_location"] == "Austin"]
   cantidad_Austin = len(df_Austin)
