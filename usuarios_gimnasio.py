@@ -37,12 +37,12 @@ if st.button("Localidad(grafico)"):
   cantidad_Detroit = len(df_Detroit)
  df_Miami = df[df["user_location"] == "Miami"]
   cantidad_Miami = len(df_Miami)
- df_San Francisco = df[df["user_location"] == "San Francisco"]
-  cantidad_San Francisco = len(df_San Francisco)
+ df_San_Francisco = df[df["user_location"] == "San Francisco"]
+  cantidad_San_Francisco = len(df_San_Francisco)
  df_Boston = df[df["user_location"] == "Boston"]
   cantidad_Boston = len(df_Boston)
- df_Las Vegas = df[df["user_location"] == "Las Vegas"]
-  cantidad_Las Vegas = len(df_Las Vegas)
+ df_Las_Vegas = df[df["user_location"] == "Las Vegas"]
+  cantidad_Las_Vegas = len(df_Las_Vegas)
 
   fig,ax = plt.subplots()
   ax.bar(["Denver","Orlando","Austin","Seattle","Atlanta","Detroit","Miami","San Francisco","Boston","Las Vegas"], [cantidad_denver, cantidad_Orlando, cantidad_Austin,cantidad_Seattle,cantidad_Atlanta, cantidad_Detroit, cantidad_Miami,cantidad_San Francisco,cantidad_Boston,cantidad_Las Vegas ], color="red")
