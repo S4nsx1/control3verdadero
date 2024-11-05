@@ -21,3 +21,34 @@ if st.button("Generos(grafico)"):
   ax.set_ylabel("Cantidad")
   ax.set_title("Generos usuarios registrados")
   st.pyplot(fig)
+
+if st.button("Localidad(grafico)"):
+  df_denver = df[df["user_location"] == "Denver"]
+  cantidad_denver = len(df_denver)
+   df_denver = df[df["user_location"] == "Orlando"]
+  cantidad_Orlando = len(df_Orlando)
+ df_Austin = df[df["user_location"] == "Austin"]
+  cantidad_Austin = len(df_Austin)
+ df_Seattle = df[df["user_location"] == "Seattle"]
+  cantidad_Seattle = len(df_Seattle)
+ df_Atlanta = df[df["user_location"] == "Atlanta"]
+  cantidad_Atlanta = len(df_Atlanta)
+ df_Detroit = df[df["user_location"] == "Detroit"]
+  cantidad_Detroit = len(df_Detroit)
+ df_Miami = df[df["user_location"] == "Miami"]
+  cantidad_Miami = len(df_Miami)
+ df_San Francisco = df[df["user_location"] == "San Francisco"]
+  cantidad_San Francisco = len(df_San Francisco)
+ df_Boston = df[df["user_location"] == "Boston"]
+  cantidad_Boston = len(df_Boston)
+ df_Las Vegas = df[df["user_location"] == "Las Vegas"]
+  cantidad_Las Vegas = len(df_Las Vegas)
+
+  fig,ax = plt.subplots()
+  ax.bar(["Denver","Orlando","Austin","Seattle","Atlanta","Detroit","Miami","San Francisco","Boston","Las Vegas"], [cantidad_denver, cantidad_Orlando, cantidad_Austin,cantidad_Seattle,cantidad_Atlanta, cantidad_Detroit, cantidad_Miami,cantidad_San Francisco,cantidad_Boston,cantidad_Las Vegas ], color="red")
+  ax.set_xlabel("Localida")
+  ax.set_ylabel("Lugareños")
+  ax.set_title("Localidad usuarios registrados")
+  st.pyplot(fig)
+
+
