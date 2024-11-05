@@ -22,4 +22,3 @@ ax.set_xlabel("genero")
 ax.set_ylabel("Cantidad")
 ax.set_title("Generos usuarios registrados")
 
-st.pyplot(fig)
