@@ -17,9 +17,9 @@ df_nobinarios = df[df["gender"] == "Non-binary"]
 cantidad_nobinarios = len(df_nobinarios)
 
 fig, ax = plt.subplots(1, 2, figsize=(10, 3))
-ax[1].bar(["Hombre","Mujer","No binario"], [cantidad_hombres,cantidad_mujeres,cantidad_nobinarios], color=blue)
-ax[1].set_xlabel("genero")
-ax[1].set_ylabel("Cantidad")
-ax[1].set_tittle("Generos usuarios registrados")
+ax[0].bar(["Hombre","Mujer","No binario"], [cantidad_hombres,cantidad_mujeres,cantidad_nobinarios], color=blue)
+ax[0].set_xlabel("genero")
+ax[0].set_ylabel("Cantidad")
+ax[0].set_tittle("Generos usuarios registrados")
 
 st.pyplot(fig)
