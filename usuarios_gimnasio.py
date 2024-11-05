@@ -19,6 +19,6 @@ fig,ax = plt.subplots()
 ax.bar(["Hombre","Mujer","No binario"], [cantidad_hombres,cantidad_mujeres,cantidad_nobinarios], color="blue")
 ax.set_xlabel("genero")
 ax.set_ylabel("Cantidad")
-ax.set_tittle("Generos usuarios registrados")
+ax.set_title("Generos usuarios registrados")
 
 st.pyplot(fig)
