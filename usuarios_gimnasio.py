@@ -4,7 +4,9 @@ import matplotlib.pyplot as plt
 
 df = pd.read_csv("users_data.csv")
 
-st.write("""## Graficas de los usuarios que asisten al gimnasio""")
+st.write(""" 
+#Gimnasio Akira
+## Graficas de los usuarios que asisten al gimnasio""")
 if st.button("Generos(grafico)"):
   df_hombres = df[df["gender"] == "Male"]
   cantidad_hombres = len(df_hombres)
