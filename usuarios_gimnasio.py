@@ -6,10 +6,10 @@ df = pd.read_csv("users_data.csv")
 
 st.write("""## Graficas de los usuarios que asisten al gimnasio""")
 
-df_hombres = df[df["gender"] == "male"]
+df_hombres = df[df["gender"] == "Male"]
 cantidad_hombres = len(df_hombres)
 
-df_mujeres = df[df["gender"] == "female"]
+df_mujeres = df[df["gender"] == "Female"]
 cantidad_mujeres = len(df_mujeres)
 
 df_nobinarios = df[df["gender"] == "Non-binary"]
