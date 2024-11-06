@@ -46,7 +46,7 @@ if st.button("Localidad(grafico)"):
   df_Las_Vegas = df[df["user_location"] == "Las Vegas"]
   cantidad_Las_Vegas = len(df_Las_Vegas)
 
-  fig,ax = plt.subplots()
+  fig,ax = plt.subplots(figsize=(10,3))
   ax.bar(["Denver","Orlando","Austin","Seattle","Atlanta","Detroit","Miami","San Francisco","Boston","Las Vegas"], [cantidad_denver, cantidad_Orlando, cantidad_Austin,cantidad_Seattle,cantidad_Atlanta, cantidad_Detroit, cantidad_Miami,cantidad_San_Francisco,cantidad_Boston,cantidad_Las_Vegas ], color="red")
   ax.set_xlabel("Localida")
   ax.set_ylabel("Lugareños")
