@@ -17,7 +17,7 @@ if st.button("Generos(grafico)"):
   df_nobinarios = df[df["gender"] == "Non-binary"]
   cantidad_nobinarios = len(df_nobinarios)
 
-  fig,ax = plt.subplots()
+  fig,ax = plt.subplots(figsize=(10,3))
   ax.bar(["Hombre","Mujer","No binario"], [cantidad_hombres,cantidad_mujeres,cantidad_nobinarios], color="blue")
   ax.set_xlabel("genero")
   ax.set_ylabel("Cantidad")
