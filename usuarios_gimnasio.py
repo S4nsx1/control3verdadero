@@ -48,9 +48,24 @@ if st.button("Localidad(grafico)"):
 
   fig,ax = plt.subplots(figsize=(10,3))
   ax.bar(["Denver","Orlando","Austin","Seattle","Atlanta","Detroit","Miami","San Francisco","Boston","Las Vegas"], [cantidad_denver, cantidad_Orlando, cantidad_Austin,cantidad_Seattle,cantidad_Atlanta, cantidad_Detroit, cantidad_Miami,cantidad_San_Francisco,cantidad_Boston,cantidad_Las_Vegas ], color="red")
-  ax.set_xlabel("Localida")
+  ax.set_xlabel("Localidad")
   ax.set_ylabel("Lugareños")
   ax.set_title("Localidad usuarios registrados")
   st.pyplot(fig)
 
-
+if st.button("Calidad Suscripciones(grafico)"):
+  df_Basic = df[df["subscription_plan"] == "Basic"]
+  cantidad_Basic = len(df_Basic)
+  df_Pro = df[df["subscription_plan"] == "Pro"]
+  cantidad_Pro = len(df_Pro)
+  df_Student = df[df["subscription_plan"] == "Student"]
+  cantidad_Student = len(df_Student)
+  
+  fig,ax = plt.subplots(figsize=(10,3))
+  ax.bar(["Basic","Pro","Student"],[cantidad_Basic,cantidad_Pro, cantidad_Student], color="lilac")
+  ax.set_xlabel("Suscripciones")
+  ax.set_ylabel("Usuarios")
+  ax.set_title("Suscripciones usuarios registrados")
+  st.pyplot(fig)
+  
+  
