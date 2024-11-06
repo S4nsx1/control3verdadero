@@ -67,5 +67,10 @@ if st.button("Calidad Suscripciones(grafico)"):
   ax.set_ylabel("Usuarios")
   ax.set_title("Suscripciones usuarios registrados")
   st.pyplot(fig)
-  
+st.image("gim.jpg",caption="gimnasio")
+st.write("""
+## Datos cargados
+""")
+st.table(df.head())
+
   
