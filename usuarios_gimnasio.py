@@ -62,7 +62,7 @@ if st.button("Calidad Suscripciones(grafico)"):
   cantidad_Student = len(df_Student)
   
   fig,ax = plt.subplots(figsize=(10,3))
-  ax.bar(["Basic","Pro","Student"],[cantidad_Basic,cantidad_Pro, cantidad_Student], color="Green")
+  ax.bar(["Basic","Pro","Student"],[cantidad_Basic,cantidad_Pro, cantidad_Student], color="CCA9DD")
   ax.set_xlabel("Suscripciones")
   ax.set_ylabel("Usuarios")
   ax.set_title("Suscripciones usuarios registrados")
