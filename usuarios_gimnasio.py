@@ -24,7 +24,7 @@ if st.button("Generos(grafico)"):
   ax.set_title("Generos usuarios registrados")
   st.pyplot(fig)
 
-if st.button("Localidad(grafico)"):
+
   df_denver = df[df["user_location"] == "Denver"]
   cantidad_denver = len(df_denver)
   df_Orlando = df[df["user_location"] == "Orlando"]
